@@ -121,9 +121,11 @@ var deleteTask=function(){
 //Mark task completed
 var taskCompleted=function(){
     console.log("Complete Task...");
-
+    
     //Append the task list item to the #completed-tasks
     var listItem=this.parentNode;
+    var label=listItem.querySelector("label");
+    label.className = "task label-task completed-tasks-label";
     completedTasksHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskIncomplete);
 
