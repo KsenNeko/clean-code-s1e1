@@ -17,7 +17,7 @@
     font-family: fantasy, cursive;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
 
   .header { 
       text-align: center;
@@ -39,18 +39,18 @@
 }
 
 ul {                                         /*здесь происходит сброс стилей*/
-    margin:0;
+    margin: 0;
     padding: 0px;
 }
 
 li,                                          /*здесь происходит сброс стилей*/
 h3 {
-    list-style:none;
+    list-style: none;
 }
 
 input,                                       /*здесь происходит сброс стилей*/
 button {
-    outline:none;
+    outline: none;
 }
 
 .button {
@@ -152,14 +152,14 @@ button {
 
 /* Edit Task */
 .input-text {
-    display:none;
+    display: none;
 }
 
 .edit-mode .task   {                /*БЭМ не запрещает вложенные селекторы вложенность уместна, если нужно изменить стили элементов в зависимости от состояния блока*/
-    display:inline-block;
-    width:224px;
+    display: inline-block;
+    width: 224px;
 }
 
 .edit-mode .label-task {
-    display:none;
+    display: none;
 }
