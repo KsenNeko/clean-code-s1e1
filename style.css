@@ -4,13 +4,13 @@
     color: #333;
     font-family: Lato, sans-serif;
 }
-.wrapper {
+.header {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
-.wrapper-img {
+.header-img {
     width: 100%;
 }
 .more-inf {
@@ -19,7 +19,7 @@
 
 @media (max-width:768px) {
 
-  .wrapper { 
+  .header { 
       text-align: center;
   }
 }
@@ -147,11 +147,11 @@ button {
     display:none;
 }
 
-.edit-mode input[type=text] {
+.edit-mode .task   {                /*БЭМ не запрещает вложенные селекторы вложенность уместна, если нужно изменить стили элементов в зависимости от состояния блока*/
     display:inline-block;
     width:224px;
 }
 
-.edit-mode label {
+.edit-mode .label-task {
     display:none;
 }
